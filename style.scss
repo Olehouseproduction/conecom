@@ -1,120 +1,106 @@
 // reset
-*,
-*::before,
-*::after {
+.page,
+.page * {
   box-sizing: border-box;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+.page h1,
+.page h2,
+.page h3,
+.page h4,
+.page p,
+.page figure,
+.page blockquote,
+.page dl,
+.page dd {
   margin: 0;
 }
 
-ul[role="list"],
-ol[role="list"] {
+.page ul[role="list"],
+.page ol[role="list"] {
   list-style: none;
 }
 
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-}
-
-img,
-picture {
+.page img,
+.page picture {
   max-width: 100%;
   display: block;
 }
 
-input,
-button,
-textarea,
-select {
+.page input,
+.page button,
+.page textarea,
+.page select {
   font: inherit;
 }
 
-//reset-end
-
-html {
-  font-size: 62.5%; // 1rem = 10px
-}
-
-body {
-  margin: 0;
-}
-
-a {
-  text-decoration: inherit;
-}
+// reset-end
 
 .page {
-  background: #ffffff;
-}
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  min-height: 100vh;
+  font-size: 10px;
 
-.page__wrapper {
-  max-width: 125rem;
-  margin: 1.5rem;
-  min-width: 30rem;
-  position: relative;
-}
+  a {
+    text-decoration: inherit;
+  }
 
-._inner {
-  padding: 0 6rem;
-}
+  .page__wrapper {
+    width: 1250px;
+    // max-width: 125em;
+    margin: 1.5em;
+    min-width: 30em;
+    position: relative;
+  }
 
-// hero-screen
-.hero-screen {
-  height: 59.9rem;
-  width: 100%;
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
-  color: #ffffff;
+  ._inner {
+    padding: 0 6em;
+  }
 
-  background: linear-gradient(0deg, rgba(138, 123, 96, 0.67), rgba(138, 123, 96, 0.67)),
-    url(images/hero-background-original-progressive.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  // hero-screen
+  .hero-screen {
+    height: 59.9em;
+    width: 100%;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
 
-.hero-screen__logo-link {
-  display: block;
-  margin-bottom: 11.6rem;
-}
+    background: linear-gradient(0deg, rgba(138, 123, 96, 0.67), rgba(138, 123, 96, 0.67)),
+      url(images/hero-background-original-progressive.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-.hero-screen__logo-image {
-  padding: 3.6rem 1.1rem;
-  background-color: #0a398a;
-}
+  .hero-screen__logo-link {
+    display: block;
+    margin-bottom: 11.6em;
+  }
 
-.hero-screen__title {
-  text-transform: uppercase;
-  font-size: 7.2rem;
-  line-height: 8rem;
-  margin-bottom: 1.5rem;
-}
+  .hero-screen__logo-image {
+    padding: 3.6em 1.1em;
+    background-color: #0a398a;
+  }
 
-.hero-screen__subtitle {
-  font-size: 2.6rem;
-  line-height: 3.6rem;
-}
+  .hero-screen__title {
+    text-transform: uppercase;
+    font-size: 7.2em;
+    // margin-bottom: 1.5em;
+    margin-bottom: 15px;
+  }
 
-.decoration {
-  position: absolute;
-  right: 0;
-  top: 32.9rem;
-  width: 36.3rem;
-  height: 36.8rem;
+  .hero-screen__subtitle {
+    font-size: 2.6em;
+    line-height: 36px;
+  }
+
+  .decoration {
+    position: absolute;
+    right: 0;
+    top: 32.9em;
+    width: 36.3em;
+    height: 36.8em;
+  }
 }
