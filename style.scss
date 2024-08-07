@@ -1,6 +1,6 @@
-* {
-  outline: 2px solid green;
-}
+// * {
+//   outline: 2px solid green;
+// }
 
 .page,
 .page * {
@@ -14,7 +14,7 @@
   min-height: 100vh;
   font-size: 0.625rem;
   padding: 1.5em;
-  // position: relative;
+  position: relative;
 
   ._inner {
     padding: 0 6em;
@@ -48,7 +48,7 @@
     &__title {
       text-transform: uppercase;
       font-size: 4.5rem; // 7.2em
-      margin-bottom: 15px; // 15px
+      margin-bottom: 15px;
     }
 
     &__subtitle {
@@ -59,22 +59,64 @@
   }
 
   .decoration {
-    // position: absolute;
-    // right: 0;
-    // top: 32.9em;
     width: 36.3em;
     height: 36.8em;
-    margin-top: -20em; /* Подкорректируйте значение для нужного расположения */
-    margin-left: auto;
-    margin-right: 0;
+    margin-top: -20em;
+    position: absolute;
+    right: 0;
+  }
 
-    // margin-top: -16.6rem; // -267px;
-    // margin-right: 21rem; // 337px;
-    // margin-left: 1485px;
-    img {
-      // display: block;
-      // width: 100%;
-      // height: auto;
+  // about-duffbeer
+
+  .about-duffbeer {
+    display: flex;
+    gap: 4em;
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
+  .about-duffbeer__video-wrapper {
+    .about-duffbeer__video-background {
+      width: 545px;
+      height: 367px;
+      background-color: #f7eee5;
+      .about-duffbeer__video {
+        width: 545px;
+        height: 365px;
+      }
+    }
+  }
+  .about-duffbeer__content {
+  }
+  .about-duffbeer__years {
+    margin-bottom: 3.2em;
+
+    .about-duffbeer__number {
+      // color: #8a7b60;
+      display: block;
+      margin-bottom: 2em;
+    }
+
+    .about-duffbeer__years-text {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 167%;
+      text-transform: uppercase;
+      color: #0a3b93;
+    }
+  }
+
+  .about-duffbeer__description {
+  }
+
+  .about-duffbeer__paragraph {
+    font-size: 18px;
+    line-height: 167%;
+    color: #6c5f4a;
+
+    &:first-child {
+      margin-bottom: 1em;
     }
   }
 }
