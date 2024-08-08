@@ -127,4 +127,43 @@
       margin-bottom: 1em;
     }
   }
+
+  // mission-duffbeer
+
+  .mission-duffbeer {
+    background-color: #0a3b93;
+    height: 25.2em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .mission-duffbeer__content {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+
+  .mission-duffbeer__hooks {
+    font-family: "Lato";
+    font-size: 9.5rem;
+    line-height: 133%;
+
+    margin-right: 27px;
+    margin-bottom: 38px;
+    margin-left: -13px;
+  }
+
+  .mission-duffbeer__quote {
+    font-family: "Lato";
+    font-size: 1.5rem; // 24px;
+    line-height: 133%; // 32px;
+    width: 676px;
+  }
+
+  .mission-duffbeer__decoration {
+    margin-top: 15.7em;
+    width: 100%;
+    height: 100%;
+  }
 } // закрывающая скобка для .page
