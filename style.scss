@@ -74,44 +74,52 @@
     padding-top: 10em;
     padding-bottom: 10em;
   }
+
   .about-duffbeer__video-wrapper {
-    .about-duffbeer__video-background {
-      width: 545px;
-      height: 367px;
-      background-color: #f7eee5;
-      .about-duffbeer__video {
-        width: 545px;
-        height: 365px;
-      }
-    }
+    position: relative;
   }
-  .about-duffbeer__content {
+
+  .about-duffbeer__video {
+    width: 54.5em;
+    height: 36.5em;
+    z-index: 2;
+    position: inherit;
+    margin-top: 3.7em;
   }
+
+  .about-duffbeer__video-background {
+    width: 54.5em;
+    height: 36.7em;
+    background-color: #f7eee5;
+    position: absolute;
+    top: 0px;
+    left: -3.5em;
+  }
+
   .about-duffbeer__years {
+    font-family: "Lato";
+    font-style: normal;
     margin-bottom: 3.2em;
 
     .about-duffbeer__number {
-      // color: #8a7b60;
       display: block;
-      margin-bottom: 2em;
+      margin-bottom: 23px;
+      font-weight: 900;
+      font-size: 5.625rem; // 90px;
+      line-height: 0.7;
+      color: #8a7b60;
     }
 
     .about-duffbeer__years-text {
-      font-family: "Lato";
-      font-style: normal;
       font-weight: 700;
-      font-size: 18px;
-      line-height: 167%;
+      font-size: 1.125rem; // 18px;
       text-transform: uppercase;
       color: #0a3b93;
     }
   }
 
-  .about-duffbeer__description {
-  }
-
   .about-duffbeer__paragraph {
-    font-size: 18px;
+    font-size: 1.125rem; // 18px;
     line-height: 167%;
     color: #6c5f4a;
 
@@ -119,4 +127,4 @@
       margin-bottom: 1em;
     }
   }
-}
+} // закрывающая скобка для .page
